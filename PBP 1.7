@@ -32,12 +32,12 @@
 
     #content {
       float: left;
-      width: 75%;
+      width: 80%;
     }
 
     aside {
       float: right;
-      width: 25%;
+      width: 20%;
       padding-left: 20px;
     }
 
@@ -200,7 +200,7 @@
             <tr>
               <td>
                 <?php foreach ($kumpulanSoal as $soal) : ?>
-                  <a href="tampilan html 2.php?Nomor=<?= $soal["Nomor"]; ?>&Soal=<?= $soal["Soal"]; ?>&Gambar=<?= $soal["Gambar"]; ?>&Jawabana=<?= $soal["Jawaban"][0]; ?>&Jawabanb=<?= $soal["Jawaban"][1]; ?>&Jawabanc=<?= $soal["Jawaban"][2]; ?> " class="btn btn-primary"><?= $soal["Nomor"] ?></a>
+                  <a href="tampilan html 2.php?Nomor=<?= $soal["Nomor"]; ?>&Soal=<?= $soal["Soal"]; ?>&Gambar=<?= $soal["Gambar"]; ?>&Jawabana=<?= $soal["Jawaban"][0]; ?>&Jawabanb=<?= $soal["Jawaban"][1]; ?>&Jawabanc=<?= $soal["Jawaban"][2]; ?> " class="btn btn-primary mt-1 mb-1"><?= $soal["Nomor"] ?></a>
                 <?php endforeach; ?>
               </td>
             </tr>
