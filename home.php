@@ -44,8 +44,8 @@
             <h3>2. Sheva Ivanda Pratama</h3>
             <h3>3. Muhammad Fathur Rozzaq</h3>
             <h3>4. Bagaskara Rifki</h3>
-            <h3>5. Arka</h3>
-            <h3>6. Pikri</h3><br/>
+            <h3>5. Gregorius Arkadio Rajendra</h3>
+            <h3>6. Muhammad Fikri ALlfaqih</h3><br/>
         </div>
         <div class="topnav">
             <a class="start" href="PBP18.php">START</a>
