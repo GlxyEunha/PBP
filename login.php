@@ -99,6 +99,9 @@ if (isset($_POST['submit'])) {
         text-align: left;
         color: #90caf9;
     }
+    .bold{
+        font-weight: bold;
+    }
     .username{
         width: calc(100% - 20px);
         padding: 8px 10px;
@@ -116,9 +119,13 @@ if (isset($_POST['submit'])) {
         background-color:#2979ff;
         font-size: 18px;
         color: #fafafa;
+        margin-bottom: 5px;
     }
     .radio-item label{
         color: #90caf9;
+    }
+    p{
+        text-align:center;
     }
   </style>
 
@@ -128,9 +135,9 @@ if (isset($_POST['submit'])) {
   <h1>Welcome</h1>
   <form action="" method="POST">
 
-    <label>Masukkan username</label><br>
+    <label class="bold">Masukkan username</label><br>
     <input type="text" class="username" name="user_name"><br>
-    <label>Masuk sebagai</label><br>
+    <label class="bold">Masuk sebagai</label><br>
     <div class="radio-item">
     <input type="radio" id="opsia" name="tipe_user" value="penjual">
     <label for="opsia">Penjual</label>
@@ -140,18 +147,18 @@ if (isset($_POST['submit'])) {
     <label for="opsib">Pembeli</label>
     </div>
     <br>
-    <button type="submit" class="login" name="submit">Login</button><br>
-    <button type="" class="daftar" name="daftar_login" formaction="registrasi.php">Daftar</button>
+    <button type="submit" class="btn btn-primary" name="submit">Login</button><br>
+    <button type="" class="btn btn-primary" name="daftar_login" formaction="registrasi.php">Daftar</button>
 
 
     <?php
 
     if (isset($user_name_salah)) {
-      echo "<p style='color:blue'>username salah!</p>";
+      echo "<p style='color:red'>username salah!</p>";
     } elseif (isset($user_kosong)) {
-      echo "<p style='color:blue'>username belum diisi!</p>";
+      echo "<p style='color:red'>username belum diisi!</p>";
     } elseif (isset($empty_tipe_penjual)) {
-      echo "<p style='color:blue'>tipe data belum diisi!</p>";
+      echo "<p style='color:red'>tipe data belum diisi!</p>";
     } 
 
     ?>
