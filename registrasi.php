@@ -80,6 +80,9 @@ if (isset($_POST['daftar_registrasi'])) {
         text-align: left;
         color: #90caf9;
     }
+    .bold{
+        font-weight: bold;
+    }
     .username{
         width: calc(100% - 20px);
         padding: 8px 10px;
@@ -97,9 +100,13 @@ if (isset($_POST['daftar_registrasi'])) {
         background-color:#2979ff;
         font-size: 18px;
         color: #fafafa;
+        margin-bottom: 5px;
     }
     .radio-item label{
         color: #90caf9;
+    }
+    p{
+        text-align:center;
     }
   </style>
 
@@ -110,19 +117,19 @@ if (isset($_POST['daftar_registrasi'])) {
   <div class="container">  
   <h1>Daftar</h1>
   <form action="" method="POST">
-    <label>Masukkan nama</label>
+    <label class="bold">Masukkan nama</label>
     <input type="text" class="username" name="nama">
 
-    <label>Masukkan username</label>
+    <label class="bold">Masukkan username</label>
     <input type="text" class="username" name="user_name">
 
-    <label>Masukkan email</label>
+    <label class="bold">Masukkan email</label>
     <input type="email" class="username" name="email" id="">
 
-    <label>Masukkan no telpon</label>
+    <label class="bold">Masukkan no telpon</label>
     <input type="text" class="username" name="no_telp">
 
-    <label>registrasi sebagai</label>
+    <label class="bold">registrasi sebagai</label>
     <div class="radio-item">
     <input type="radio" id="opsia" name="tipe_user" value="penjual">
     <label for="opsia">Penjual</label>
@@ -137,12 +144,12 @@ if (isset($_POST['daftar_registrasi'])) {
 
     <br>
     <button type="submit" name="daftar_registrasi" class="btn btn-primary">Daftar</button>
-    <button typr="" formaction="login.php">Back</button>
+    <button typr="" class="btn btn-primary" formaction="login.php">Back</button>
     <!-- <a href="login.php" class="btn btn-primary">back</a> -->
     <?php
 
     if (isset($field_kosong)) {
-      echo "<p style='color:blue'>ada field yang belum diisi!</p>";
+      echo "<p style='color:red'>ada field yang belum diisi!</p>";
     }
 
 
